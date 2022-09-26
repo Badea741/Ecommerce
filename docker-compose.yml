@@ -1,0 +1,27 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  ecommerceapi:
+    image: ecommerceapi:dev
+    build:
+      context: .
+      dockerfile: ECommerce.Api/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=ecommerce;Uid=root;Pwd=2510203121;
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/src
+  db:
+    image: mysql/mysql-server:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "2510203121"
+      MYSQL_DATABASE: "ecommerce"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "2510203121"
+    volumes:
+      - db_data:/var/lib/mysql
+volumes:
+  db_data:

@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "ECommerce.Api"
+		},
+		{
+			"path": "ECommerce.Shared"
+		},
+		{
+			"path": "ECommerce.Shared/Configurations"
+		},
+		{
+			"path": "ECommerce.Shared/Dtos"
+		},
+		{
+			"path": "ECommerce.Shared/Entities"
+		},
+		{
+			"path": "ECommerce.Shared/MapperProfiles"
+		},
+		{
+			"path": "ECommerce.Shared/Repositories"
+		},
+		{
+			"path": "ECommerce.Shared/UnitsOfWork"
+		},
+		{
+			"path": "ECommerce.Shared/Validators"
+		},
+		{
+			"path": "ECommerce.Api/Configurations"
+		},
+		{
+			"path": "ECommerce.Api/Controllers"
+		},
+		{
+			"path": "ECommerce.Shared/Installers"
+		},
+		{
+			"path": "Src/AuthenticationServices"
+		}
+	],
+	"settings": {}
+}
